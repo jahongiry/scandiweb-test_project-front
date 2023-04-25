@@ -1,0 +1,99 @@
+// Navbar.scss
+.pageName {
+  font-size: 2rem;
+  color: rgba(18, 18, 18, 0.796);
+}
+
+.naviagtion nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.naviagtion ul {
+  margin: 1rem 1rem 0 1rem;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    margin-right: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.navLine {
+  border: 1px solid black;
+  width: 96%;
+}
+
+// Add Button
+.add-btn {
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 16px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  }
+}
+
+// Delete Button
+#delete-product-button {
+  border-radius: 4px;
+  background-color: #f44336;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    background-color: #b71c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.cancel-btn {
+  border-radius: 4px;
+  background-color: #f44336;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    background-color: #b71c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  }
+
+  .cancel-btn-in {
+    color: white;
+  }
+}

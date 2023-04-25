@@ -1,0 +1,22 @@
+.productContainer {
+  min-height: 80vh;
+  text-align: center;
+  margin: 0 2.6rem 0 1rem;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    list-style: none;
+    text-align: center;
+    li {
+      padding: 1rem;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .delete-checkbox {
+        align-self: flex-start;
+      }
+    }
+  }
+}
