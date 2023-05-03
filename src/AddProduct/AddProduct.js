@@ -135,7 +135,7 @@ function AddProduct() {
               required
             >
               <option value=''>Select Type</option>
-              <option value='Disk'>Disk</option>
+              <option value='DVD'>DVD</option>
               <option value='Book'>Book</option>
               <option value='Furniture'>Furniture</option>
             </select>
@@ -146,7 +146,7 @@ function AddProduct() {
             )}
           </div>
 
-          {selectedOption === 'Disk' && (
+          {selectedOption === 'DVD' && (
             <div id='DVD'>
               <label htmlFor='size'>Please, provide size (MB):</label>
               <input
