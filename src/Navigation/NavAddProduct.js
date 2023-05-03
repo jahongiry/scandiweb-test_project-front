@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavAddProduct() {
+function NavAddProduct({ saveProduct }) {
   return (
     <div className='naviagtion'>
       <nav>
@@ -12,7 +12,7 @@ function NavAddProduct() {
             </Link>
           </li>
           <li>
-            <button type='submit' className='add-btn'>
+            <button type='submit' className='add-btn' onClick={saveProduct}>
               Save
             </button>
             <Link to='/'>

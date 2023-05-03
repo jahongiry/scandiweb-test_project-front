@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
-function NavProductList() {
+function NavProductList({ handleDeleteAll }) {
   return (
     <div className='naviagtion'>
       <nav>
@@ -16,7 +16,9 @@ function NavProductList() {
             <Link to='/addproduct'>
               <button className='add-btn'>Add</button>
             </Link>
-            <button id='delete-product-button'>MASS DELETE</button>
+            <button onClick={handleDeleteAll} id='delete-product-button'>
+              MASS DELETE
+            </button>
           </li>
         </ul>
       </nav>
