@@ -47,8 +47,7 @@ function ProductList() {
           {products.map((product) => (
             <li className='eachProductContainer' key={product.sku}>
               <input
-                className='delete-checkbox'
-                id='delete-checkbox'
+                className='deleteCheckbox'
                 type='checkbox'
                 checked={selected.includes(product.sku)}
                 onChange={() =>
