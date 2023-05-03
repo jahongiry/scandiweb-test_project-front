@@ -15,7 +15,7 @@ This project is made for Scandiweb as test task.
 
 ## Live link
 
-[luxurycars.com](https://sensational-mochi-304065.netlify.app/)
+[scandiweb-task.com](https://wondrous-manatee-8d69be.netlify.app/)
 
 ## Getting Started
 
