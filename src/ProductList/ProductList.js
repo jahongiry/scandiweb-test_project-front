@@ -48,6 +48,7 @@ function ProductList() {
             <li className='eachProductContainer' key={product.sku}>
               <input
                 className='delete-checkbox'
+                id='delete-checkbox'
                 type='checkbox'
                 checked={selected.includes(product.sku)}
                 onChange={() =>

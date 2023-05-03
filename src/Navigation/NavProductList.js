@@ -14,7 +14,7 @@ function NavProductList({ handleDeleteAll }) {
           </li>
           <li>
             <Link to='/addproduct'>
-              <button className='add-btn'>Add</button>
+              <button className='add-btn'>ADD</button>
             </Link>
             <button onClick={handleDeleteAll} id='delete-product-button'>
               MASS DELETE
