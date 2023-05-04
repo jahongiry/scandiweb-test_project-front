@@ -44,6 +44,19 @@ function ProductList() {
 
       <div className='productContainer'>
         <ul>
+          <li className='eachProductContainer'>
+            <input
+              className='delete-checkbox'
+              id='delete-checkbox'
+              type='checkbox'
+            />
+            <p className='skuOnList'>{'Test001'}</p>
+            {/* <p>{product.name}</p>
+            <p>Price: {product.price}</p>
+            {product.size && <p>Size: {product.size}</p>}
+            {product.weight && <p>Weight: {product.weight}</p>}
+            {product.dimension && <p>Dimension {product.dimension}</p>} */}
+          </li>
           {products.map((product) => (
             <li className='eachProductContainer' key={product.sku}>
               <input
