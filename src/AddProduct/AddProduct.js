@@ -42,29 +42,28 @@ function AddProduct() {
       length.length === 0
     ) {
       setError(true);
-      const product = {
-        sku: sku,
-        type: selectedOption,
-        name: name,
-        price: price,
-        featureVolume: property,
-      };
-      console.log(product);
-
-      axios
-        .post('http://localhost/scandiweb-api/v1/products/add', product)
-        .then((response) => {
-          if (response.data.message === 'Product has been created!') {
-            navigate('/');
-          }
-          if (response.data.message === 'SKU already exists') {
-            setErrorSku(true);
-          }
-        })
-        .catch((error) => {
-          console.log(error.response);
-        });
     }
+    const product = {
+      sku: sku,
+      type: selectedOption,
+      name: name,
+      price: price,
+      featureVolume: property,
+    };
+
+    axios
+      .post('http://localhost/scandiweb-api/v1/products/add', product)
+      .then((response) => {
+        if (response.data.message === 'Product has been created!') {
+          navigate('/');
+        }
+        if (response.data.message === 'SKU already exists') {
+          setErrorSku(true);
+        }
+      })
+      .catch((error) => {
+        console.log(error.response);
+      });
   };
 
   return (
