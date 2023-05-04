@@ -44,22 +44,20 @@ function ProductList() {
 
       <div className='productContainer'>
         <ul>
-          {products.length === 0 && (
-            <span className='delete-checkbox'>Please Add products</span>
-          )}
           {products.map((product) => (
             <li className='eachProductContainer' key={product.sku}>
-              <input
-                className='delete-checkbox'
-                id='delete-checkbox'
-                type='checkbox'
-                checked={selected.includes(product.sku)}
-                onChange={() =>
-                  selected.includes(product.sku)
-                    ? handleDeselect(product.sku)
-                    : handleSelect(product.sku)
-                }
-              />
+              <div className='delete-checkbox'>
+                <input
+                  id='delete-checkbox'
+                  type='checkbox'
+                  checked={selected.includes(product.sku)}
+                  onChange={() =>
+                    selected.includes(product.sku)
+                      ? handleDeselect(product.sku)
+                      : handleSelect(product.sku)
+                  }
+                />
+              </div>
               <span className='skuOnList'>{product.sku}</span>
               <span>{product.name}</span>
               <span>Price: {product.price}</span>
