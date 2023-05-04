@@ -18,7 +18,6 @@ function AddProduct() {
   const [errorSku, setErrorSku] = useState(false);
 
   const navigate = useNavigate();
-
   useEffect(() => {
     if (height.length > 0 && width.length > 0 && length.length > 0) {
       setProperty(`${height}x${width}x${length}`);

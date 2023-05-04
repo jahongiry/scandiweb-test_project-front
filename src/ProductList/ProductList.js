@@ -44,6 +44,9 @@ function ProductList() {
 
       <div className='productContainer'>
         <ul>
+          {products.length === 0 && (
+            <span className='delete-checkbox'>Please Add products</span>
+          )}
           {products.map((product) => (
             <li className='eachProductContainer' key={product.sku}>
               <input
