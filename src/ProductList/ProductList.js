@@ -50,7 +50,9 @@ function ProductList() {
               id='delete-checkbox'
               type='checkbox'
             />
-            <p className='skuOnList'>{'Test001'}</p>
+            <p className='skuOnList'>NameTest000</p>
+            <p className='skuOnList'>NameTest001</p>
+            <p className='skuOnList'>NameTest002</p>
             {/* <p>{product.name}</p>
             <p>Price: {product.price}</p>
             {product.size && <p>Size: {product.size}</p>}
