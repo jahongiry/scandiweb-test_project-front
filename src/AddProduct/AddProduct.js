@@ -49,6 +49,7 @@ function AddProduct() {
         price: price,
         featureVolume: property,
       };
+      console.log(product);
 
       axios
         .post('http://localhost/scandiweb-api/v1/products/add', product)
