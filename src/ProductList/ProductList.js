@@ -46,24 +46,22 @@ function ProductList() {
         <ul>
           {products.map((product) => (
             <li className='eachProductContainer' key={product.sku}>
-              <div className='delete-checkbox'>
-                <input
-                  className='delete-checkbox'
-                  id='delete-checkbox'
-                  type='checkbox'
-                  onChange={() =>
-                    selected.includes(product.sku)
-                      ? handleDeselect(product.sku)
-                      : handleSelect(product.sku)
-                  }
-                />
-              </div>
-              <span className='skuOnList'>{product.sku}</span>
-              <span>{product.name}</span>
-              <span>Price: {product.price}</span>
-              {product.size && <span>Size: {product.size}</span>}
-              {product.weight && <span>Weight: {product.weight}</span>}
-              {product.dimension && <span>Dimension {product.dimension}</span>}
+              <input
+                className='delete-checkbox'
+                id='delete-checkbox'
+                type='checkbox'
+                onChange={() =>
+                  selected.includes(product.sku)
+                    ? handleDeselect(product.sku)
+                    : handleSelect(product.sku)
+                }
+              />
+              <p className='skuOnList'>{product.sku}</p>
+              <p>{product.name}</p>
+              <p>Price: {product.price}</p>
+              {product.size && <p>Size: {product.size}</p>}
+              {product.weight && <p>Weight: {product.weight}</p>}
+              {product.dimension && <p>Dimension {product.dimension}</p>}
             </li>
           ))}
         </ul>
