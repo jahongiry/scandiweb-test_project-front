@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './AddProduct.scss';
 import NavAddProduct from '../Navigation/NavAddProduct';
+import { MAINURL } from '../Const';
 
 function AddProduct() {
   const location = useLocation();
@@ -51,7 +52,7 @@ function AddProduct() {
     };
 
     axios
-      .post('http://localhost/scandiweb-api/v1/products/add', product)
+      .post(`${MAINURL}/v1/products/add`, product)
       .then((response) => {
         if (response.data.message === 'Product has been created!') {
           navigate('/');

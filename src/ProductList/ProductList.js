@@ -3,6 +3,7 @@ import axios from 'axios';
 import './ProductList.scss';
 import { useLocation } from 'react-router-dom';
 import NavProductList from '../Navigation/NavProductList';
+import { MAINURL } from '../Const';
 
 function ProductList() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function ProductList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost/scandiweb-api/v1/products')
+      .get(`${MAINURL}/v1/products`)
       .then((response) => setProducts(response.data.message))
       .catch((error) => setError(error));
   }, []);
@@ -27,7 +28,7 @@ function ProductList() {
 
   function handleDeleteAll() {
     axios
-      .delete('http://localhost/scandiweb-api/v1/products/delete', {
+      .delete(`${MAINURL}/v1/products/delete`, {
         data: { sku: selected },
       })
       .then((response) =>
@@ -48,7 +49,6 @@ function ProductList() {
             <li className='eachProductContainer' key={product.sku}>
               <input
                 className='delete-checkbox'
-                id='delete-checkbox'
                 type='checkbox'
                 onChange={() =>
                   selected.includes(product.sku)
