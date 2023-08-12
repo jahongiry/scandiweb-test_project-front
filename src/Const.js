@@ -1,1 +1,1 @@
-export const MAINURL = 'http://jahongmg.beget.tech';
+export const MAINURL = 'https://scandiweb-api-test.000webhostapp.com';
