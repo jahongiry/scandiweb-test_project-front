@@ -15,7 +15,7 @@ This project is made for Scandiweb as test task.
 
 ## Live link
 
-(Live link)[https://stellular-crostata-a1acc1.netlify.app]
+[Live link](https://stellular-crostata-a1acc1.netlify.app)
 
 ## Getting Started
 
