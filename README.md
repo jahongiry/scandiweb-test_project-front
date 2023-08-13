@@ -15,7 +15,7 @@ This project is made for Scandiweb as test task.
 
 ## Live link
 
-[scandiweb-task.com](https://wondrous-manatee-8d69be.netlify.app/)
+[https://stellular-crostata-a1acc1.netlify.app]
 
 ## Getting Started
 
