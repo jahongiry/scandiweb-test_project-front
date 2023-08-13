@@ -1,1 +1,1 @@
-export const MAINURL = 'https://crystalclean.uz';
+export const MAINURL = 'http://crystalclean.uz';
